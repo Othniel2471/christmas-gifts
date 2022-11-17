@@ -16,6 +16,7 @@
   transform: translateY(10rem);
   background: #333;
   height: 20rem;
+  border-radius: 5px;
 }
 input {
   width: 70%;
@@ -34,6 +35,9 @@ form {
 .name {
   color: #bab9bf;
 }
+.error {
+  color: rgb(236, 89, 89);
+}
 .btn {
   margin-top: 20px;
   border: none;
@@ -41,4 +45,22 @@ form {
   padding: 8px;
   font-weight: 700;
   border-radius: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  .input_container {
+    display: grid;
+    place-items: center;
+    transform: translateY(10rem);
+    background: #333;
+    height: 29rem;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  input {
+    width: 50%;
+  }
+  .btn {
+    width: 20%;
+  }
 }
