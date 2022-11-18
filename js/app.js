@@ -9,23 +9,29 @@ const form = document.querySelector("form").addEventListener("click", (e) => {
 });
 
 const query = () => {
-  // removeLabel;
+  removeLabel();
   if (input.value === "bernice") {
     partner.innerText = "idris";
+    displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "idris") {
     partner.innerText = "kachuwa";
+    displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "kachuwa") {
     partner.innerText = "mummy";
+    displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "simon") {
     partner.innerText = "othniel";
+    displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "mummy") {
     partner.innerText = "hello mummy you're getting a gift for simon";
+    displayAlert("Match made", "success");
   } else if (input.value === "othniel") {
     partner.innerText = "hello othniel you're getting bernice a gift";
+    displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "") {
     displayAlert("please enter name", "danger");
@@ -41,6 +47,7 @@ const query = () => {
 const displayAlert = (text, action) => {
   error.textContent = text;
   error.classList.add(`alert-${action}`);
+
   // remove alert
   setTimeout(() => {
     error.textContent = "";
@@ -48,12 +55,12 @@ const displayAlert = (text, action) => {
   }, 1000);
 };
 
-// // remove label
-// const removeLabel = () => {
-//   if (input.length < 0) {
-//     enter.innerText = "";
-//   }
-// };
+// remove label
+const removeLabel = () => {
+  if (input.value !== "") {
+    enter.innerText = "";
+  }
+};
 
 // clear fields
 const reset = () => {
