@@ -2,24 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Christmas Match</title>
   </head>
   <body>
-    <div class="container">
-      <div class="input_container">
-        <h4 class="givers-name"></h4>
-        <form>
-          <label>Please enter your name</label>
-          <input type="text" />
-          <button class="btn">click me</button>
-        </form>
-        <span class="error"></span>
-        <p class="name"></p>
+    <section class="section-center">
+      <!-- form -->
+      <form class="grocery-form">
+        <p class="givers-name"></p>
+        <h3>christmas el regalo</h3>
+        <p class="label">Please enter your name</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="names"
+            placeholder="e.g. bernice,simon,idris,mummy,kachuwa"
+          />
+          <button type="submit" class="submit-btn btn">click me</button>
+        </div>
+      </form>
+      <!-- list -->
+      <div class="partner-container">
+        <div class="name"></div>
+        <div class="alert"></div>
+        <button class="clear-btn">clear</button>
       </div>
-    </div>
+    </section>
+    <!-- javascript -->
+    <script src="./js/app.js"></script>
   </body>
-  <script src="./js/app.js"></script>
 </html>
