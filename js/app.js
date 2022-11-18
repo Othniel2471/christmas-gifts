@@ -40,6 +40,7 @@ const query = () => {
     // error.innerText = `You're not part of the family ${input.value}`;
     input.value = "";
     partner.innerText = "";
+    giver.innerText = "";
   }
 };
 
