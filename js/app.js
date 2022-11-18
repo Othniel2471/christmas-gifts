@@ -11,19 +11,19 @@ const form = document.querySelector("form").addEventListener("click", (e) => {
 const query = () => {
   removeLabel();
   if (input.value === "bernice") {
-    partner.innerText = "idris";
+    partner.innerText = "hello bernice you're getting idris a gift";
     displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "idris") {
-    partner.innerText = "kachuwa";
+    partner.innerText = "hello idris you're getting kachuwa  a gift";
     displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "kachuwa") {
-    partner.innerText = "mummy";
+    partner.innerText = "hello kachuwa you're getting mummy  a gift";
     displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "simon") {
-    partner.innerText = "othniel";
+    partner.innerText = "hello simon you're getting othniel a gift";
     displayAlert("Match made", "success");
     giver.innerText = `Hey ${input.value}`;
   } else if (input.value === "mummy") {
